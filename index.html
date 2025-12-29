@@ -288,5 +288,65 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const finePointer = window.matchMedia("(pointer: fine)");
+
+        if (prefersReducedMotion.matches || !finePointer.matches) {
+          return;
+        }
+
+        const serviceCards = document.querySelectorAll(".service-card");
+
+        const applyTilt = (card, event) => {
+          const bounds = card.getBoundingClientRect();
+          const relX = (event.clientX - bounds.left) / bounds.width - 0.5;
+          const relY = (event.clientY - bounds.top) / bounds.height - 0.5;
+          const rotateY = relX * 10;
+          const rotateX = -relY * 8;
+          const glow = Math.max(0, 0.35 - relY * 0.6);
+
+          card.style.setProperty("--tilt-rotate-x", `${rotateX}deg`);
+          card.style.setProperty("--tilt-rotate-y", `${rotateY}deg`);
+          card.style.setProperty("--tilt-glow-opacity", glow.toFixed(2));
+        };
+
+        serviceCards.forEach((card) => {
+          let rafId;
+
+          const onPreferenceChange = (event) => {
+            if (event.matches) {
+              card.style.removeProperty("--tilt-rotate-x");
+              card.style.removeProperty("--tilt-rotate-y");
+              card.style.removeProperty("--tilt-glow-opacity");
+            }
+          };
+
+          const resetTilt = () => {
+            card.style.setProperty("--tilt-rotate-x", "0deg");
+            card.style.setProperty("--tilt-rotate-y", "0deg");
+            card.style.setProperty("--tilt-glow-opacity", "0");
+          };
+
+          const handleMove = (event) => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => applyTilt(card, event));
+          };
+
+          card.addEventListener("mouseenter", handleMove);
+          card.addEventListener("mousemove", handleMove);
+          card.addEventListener("mouseleave", resetTilt);
+          card.addEventListener("focusout", resetTilt);
+
+          if (typeof prefersReducedMotion.addEventListener === "function") {
+            prefersReducedMotion.addEventListener("change", onPreferenceChange);
+          } else if (typeof prefersReducedMotion.addListener === "function") {
+            prefersReducedMotion.addListener(onPreferenceChange);
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
