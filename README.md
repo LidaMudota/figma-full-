@@ -22,6 +22,10 @@
 2. Установите расширение **Live Server** (Ritwick Dey), если оно ещё не установлено.
 3. Кликните `Go Live` в статус-баре или `Alt+L Alt+O`.
 
+### Быстрый просмотр шаблона skeleton
+- Открыть: `skeleton/index.html` двойным кликом или через Live Server.
+- Где менять: разметка секций в `skeleton/index.html` и дизайн-токены в `:root` файла `skeleton/styles.css`.
+
 ## Deployment
 - **GitHub Pages**: 
   1. Создайте ветку `gh-pages` или включите Pages в настройках репозитория.

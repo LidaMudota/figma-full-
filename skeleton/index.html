@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Универсальный лендинг — Шаблон</title>
+  <meta name="description" content="Готовый шаблон лендинга: геро-секция, преимущества, отзывы, цены, контакты.">
+  <meta property="og:title" content="Универсальный лендинг — Шаблон">
+  <meta property="og:description" content="Быстрый старт для сайта-визитки без фреймворков.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico"><!-- Добавьте файл favicon.ico при необходимости -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__layout">
+      <a class="site-header__logo" href="#" aria-label="Логотип">Brand</a>
+      <nav class="site-header__nav" aria-label="Основная навигация">
+        <ul class="site-header__menu">
+          <li class="site-header__item"><a class="site-header__link" href="#features">Преимущества</a></li>
+          <li class="site-header__item"><a class="site-header__link" href="#about">О нас</a></li>
+          <li class="site-header__item"><a class="site-header__link" href="#pricing">Тарифы</a></li>
+          <li class="site-header__item"><a class="site-header__link" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="button button--primary site-header__cta" href="#contact">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Плейсхолдер слогана</p>
+          <h1 class="hero__title">Заголовок о вашем продукте или услуге</h1>
+          <p class="hero__subtitle">Краткое описание ценности: чем вы помогаете, что получит клиент и почему стоит выбрать вас.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#pricing">Выбрать тариф</a>
+            <a class="button button--ghost" href="#features">Узнать больше</a>
+          </div>
+        </div>
+        <figure class="hero__visual" aria-label="Иллюстрация">
+          <div class="placeholder placeholder--visual" role="img" aria-label="Плейсхолдер иллюстрации"></div>
+          <figcaption class="hero__caption">Краткая подпись к иллюстрации</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Почему выбирают</p>
+          <h2 class="section__title" id="features-title">Ключевые преимущества</h2>
+          <p class="section__description">Сформулируйте 3–6 основных пунктов, которые отличают ваше предложение.</p>
+        </header>
+        <div class="grid grid--features">
+          <article class="card feature">
+            <div class="card__icon" aria-hidden="true">★</div>
+            <h3 class="card__title">Преимущество 1</h3>
+            <p class="card__text">Короткое объяснение, в чём польза для клиента и какой результат он получит.</p>
+          </article>
+          <article class="card feature">
+            <div class="card__icon" aria-hidden="true">★</div>
+            <h3 class="card__title">Преимущество 2</h3>
+            <p class="card__text">Укажите конкретику: скорость, качество, сервис, гарантия или экономия.</p>
+          </article>
+          <article class="card feature">
+            <div class="card__icon" aria-hidden="true">★</div>
+            <h3 class="card__title">Преимущество 3</h3>
+            <p class="card__text">Добавьте социальное доказательство или цифры, подтверждающие ценность.</p>
+          </article>
+          <article class="card feature">
+            <div class="card__icon" aria-hidden="true">★</div>
+            <h3 class="card__title">Преимущество 4</h3>
+            <p class="card__text">Опишите, как именно клиент взаимодействует с вашим продуктом или услугой.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__content">
+          <p class="section__eyebrow">Кто мы</p>
+          <h2 class="section__title" id="about-title">Расскажите о компании</h2>
+          <p class="section__description">Краткая история, миссия и подход к работе. Укажите, что отличает вас от конкурентов.</p>
+          <ul class="about__list">
+            <li class="about__item">Факт 1: количество проектов, лет на рынке или специализация.</li>
+            <li class="about__item">Факт 2: ключевые технологии, методы или экспертиза команды.</li>
+            <li class="about__item">Факт 3: награды, публикации или партнёры.</li>
+          </ul>
+        </div>
+        <div class="about__visual">
+          <div class="placeholder placeholder--stacked" role="img" aria-label="Плейсхолдер дополнительного изображения"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Отзывы</p>
+          <h2 class="section__title" id="testimonials-title">Мнения клиентов</h2>
+          <p class="section__description">Добавьте 2–3 отзыва с именем и ролью клиента.</p>
+        </header>
+        <div class="grid grid--testimonials">
+          <article class="card testimonial" aria-label="Отзыв клиента">
+            <p class="testimonial__text">«Цитата клиента о результате: скорость, качество и сервис на высоте».</p>
+            <div class="testimonial__meta">
+              <div class="placeholder placeholder--avatar" role="img" aria-label="Аватар клиента"></div>
+              <div>
+                <p class="testimonial__name">Имя Фамилия</p>
+                <p class="testimonial__role">Роль или компания</p>
+              </div>
+            </div>
+          </article>
+          <article class="card testimonial" aria-label="Отзыв клиента">
+            <p class="testimonial__text">«Второй отзыв: цифры результата, экономия времени или роста показателей».</p>
+            <div class="testimonial__meta">
+              <div class="placeholder placeholder--avatar" role="img" aria-label="Аватар клиента"></div>
+              <div>
+                <p class="testimonial__name">Имя Фамилия</p>
+                <p class="testimonial__role">Роль или компания</p>
+              </div>
+            </div>
+          </article>
+          <article class="card testimonial" aria-label="Отзыв клиента">
+            <p class="testimonial__text">«Третий отзыв: подчёркивает уникальность подхода и простоту работы».</p>
+            <div class="testimonial__meta">
+              <div class="placeholder placeholder--avatar" role="img" aria-label="Аватар клиента"></div>
+              <div>
+                <p class="testimonial__name">Имя Фамилия</p>
+                <p class="testimonial__role">Роль или компания</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Тарифы</p>
+          <h2 class="section__title" id="pricing-title">Простая линейка</h2>
+          <p class="section__description">Укажите ценность, что входит, и кому подходит каждый тариф.</p>
+        </header>
+        <div class="grid grid--pricing">
+          <article class="card pricing">
+            <h3 class="pricing__title">Базовый</h3>
+            <p class="pricing__price">От 9 900 ₽</p>
+            <ul class="pricing__list">
+              <li class="pricing__item">Пункт услуги 1</li>
+              <li class="pricing__item">Пункт услуги 2</li>
+              <li class="pricing__item">Пункт услуги 3</li>
+            </ul>
+            <a class="button button--ghost" href="#contact">Выбрать</a>
+          </article>
+          <article class="card pricing card--emphasis">
+            <h3 class="pricing__title">Оптимальный</h3>
+            <p class="pricing__price">От 19 900 ₽</p>
+            <ul class="pricing__list">
+              <li class="pricing__item">Расширенный пункт 1</li>
+              <li class="pricing__item">Расширенный пункт 2</li>
+              <li class="pricing__item">Расширенный пункт 3</li>
+            </ul>
+            <a class="button button--primary" href="#contact">Оставить заявку</a>
+          </article>
+          <article class="card pricing">
+            <h3 class="pricing__title">Премиум</h3>
+            <p class="pricing__price">От 39 900 ₽</p>
+            <ul class="pricing__list">
+              <li class="pricing__item">Продвинутый пункт 1</li>
+              <li class="pricing__item">Продвинутый пункт 2</li>
+              <li class="pricing__item">Продвинутый пункт 3</li>
+            </ul>
+            <a class="button button--ghost" href="#contact">Обсудить</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">FAQ</p>
+          <h2 class="section__title" id="faq-title">Частые вопросы</h2>
+          <p class="section__description">Используйте аккордеон, чтобы кратко ответить на популярные запросы.</p>
+        </header>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__question">Вопрос 1: сроки, оплата или процесс?</summary>
+            <p class="faq__answer">Краткий ответ с основными деталями, ссылкой на документацию или контакт.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Вопрос 2: что входит в базовый тариф?</summary>
+            <p class="faq__answer">Опишите объём работ, ограничения и как перейти на расширенный план.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Вопрос 3: как начать сотрудничество?</summary>
+            <p class="faq__answer">Добавьте шаги: заявка, бриф, демонстрация, запуск.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__form">
+          <header class="section__header section__header--compact">
+            <p class="section__eyebrow">Контакты</p>
+            <h2 class="section__title" id="contact-title">Свяжитесь с нами</h2>
+            <p class="section__description">Оставьте заявку или напишите напрямую: расскажите о проекте и сроках.</p>
+          </header>
+          <form class="form" action="#" method="post">
+            <div class="form__group">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__input" type="text" id="name" name="name" autocomplete="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Сообщение</label>
+              <textarea class="form__input form__input--textarea" id="message" name="message" rows="4" placeholder="Коротко опишите задачу" required></textarea>
+            </div>
+            <button class="button button--primary form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+        <aside class="contact__info" aria-label="Контактная информация">
+          <div class="info-block">
+            <h3 class="info-block__title">Адрес</h3>
+            <p class="info-block__text">Город, улица, офис — укажите точку встречи или обслуживания.</p>
+          </div>
+          <div class="info-block">
+            <h3 class="info-block__title">Телефон</h3>
+            <p class="info-block__text"><a class="link" href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+          </div>
+          <div class="info-block">
+            <h3 class="info-block__title">Email</h3>
+            <p class="info-block__text"><a class="link" href="mailto:hello@example.com">hello@example.com</a></p>
+          </div>
+          <div class="info-block">
+            <h3 class="info-block__title">Соцсети</h3>
+            <p class="info-block__text">Добавьте ссылки на Telegram, LinkedIn, VK или другие платформы.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Подвал сайта">
+    <div class="container site-footer__layout">
+      <p class="site-footer__copyright">© 2024 Brand. Все права защищены.</p>
+      <div class="site-footer__links">
+        <a class="site-footer__link" href="#">Политика конфиденциальности</a>
+        <a class="site-footer__link" href="#">Условия использования</a>
+        <a class="site-footer__link" href="#">Наверх</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
