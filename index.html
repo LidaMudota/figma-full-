@@ -1,0 +1,292 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IC Repair</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#" aria-label="IC Repair">
+          <span class="header__logo-text">IC Repair</span>
+        </a>
+
+        <nav class="header__nav" aria-label="Основная навигация">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#about">О нас</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#services">Услуги</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#portfolio">Проекты</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#reviews">Отзывы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <a class="button button--header" href="#contact">Оставить заявку</a>
+
+        <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero" aria-label="Первый экран">
+        <div class="hero__bg" aria-hidden="true"></div>
+
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Ремонт квартир и домов под ключ</h1>
+            <p class="hero__text">
+              Премиальная отделка, точные сроки, прозрачная смета. Работаем аккуратно и контролируем качество на каждом
+              этапе.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#contact">Рассчитать стоимость</a>
+              <a class="button button--ghost" href="#portfolio">Смотреть проекты</a>
+            </div>
+
+            <ul class="hero__stats" aria-label="Ключевые цифры">
+              <li class="hero__stat">
+                <span class="hero__stat-number">10+</span>
+                <span class="hero__stat-label">лет опыта</span>
+              </li>
+              <li class="hero__stat">
+                <span class="hero__stat-number">250+</span>
+                <span class="hero__stat-label">проектов</span>
+              </li>
+              <li class="hero__stat">
+                <span class="hero__stat-number">5</span>
+                <span class="hero__stat-label">лет гарантии</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h2 class="section-title about__title">О компании</h2>
+            <p class="about__text">
+              Мы делаем ремонт «как в проекте»: соблюдаем размеры, уровни и примыкания, бережно относимся к материалам и
+              фиксируем этапы фотоотчётами.
+            </p>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <span class="about__item-title">Смета без сюрпризов</span>
+                <span class="about__item-text">Фиксируем объёмы и стоимость до старта.</span>
+              </li>
+              <li class="about__item">
+                <span class="about__item-title">Контроль качества</span>
+                <span class="about__item-text">Проверки по чек-листам на каждом этапе.</span>
+              </li>
+              <li class="about__item">
+                <span class="about__item-title">Сроки в договоре</span>
+                <span class="about__item-text">План-график работ и ответственность за сроки.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__media">
+            <figure class="about__figure">
+              <!-- ЗАМЕНИТЬ на экспорт из Figma (hero/preview) -->
+              <img class="about__image" src="./images/about-1.jpg" alt="Интерьер после ремонта" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container services__container">
+          <h2 class="section-title services__title">Услуги</h2>
+      
+          <div class="services__grid">
+            <article class="service-card">
+              <div class="service-card__image">
+                <img
+                  src="./images/services-1.png"
+                  alt="Косметический ремонт: интерьер после работ"
+                  class="service-card__img"
+                />
+              </div>
+      
+              <div class="service-card__body">
+                <h3 class="service-card__title">Косметический ремонт</h3>
+      
+                <ul class="service-card__list">
+                  <li class="service-card__item">Демонтаж старых покрытий</li>
+                  <li class="service-card__item">Поклейка обоев</li>
+                  <li class="service-card__item">Покраска стен и потолков</li>
+                  <li class="service-card__item">Укладка напольных покрытий</li>
+                  <li class="service-card__item">Замена плинтусов</li>
+                  <li class="service-card__item">Замена розеток и выключателей</li>
+                  <li class="service-card__item">Замена дверной фурнитуры</li>
+                </ul>
+      
+                <div class="service-card__price">от 900 ₽ / м²</div>
+              </div>
+            </article>
+      
+            <article class="service-card">
+              <div class="service-card__image">
+                <img
+                  src="./images/services-2.png"
+                  alt="Капитальный ремонт: комплексные работы"
+                  class="service-card__img"
+                />
+              </div>
+      
+              <div class="service-card__body">
+                <h3 class="service-card__title">Капитальный ремонт</h3>
+      
+                <ul class="service-card__list">
+                  <li class="service-card__item">Демонтаж и подготовка основания</li>
+                  <li class="service-card__item">Электрика и сантехника</li>
+                  <li class="service-card__item">Штукатурка и выравнивание</li>
+                  <li class="service-card__item">Стяжка пола</li>
+                  <li class="service-card__item">Гидро- и шумоизоляция</li>
+                  <li class="service-card__item">Чистовая отделка</li>
+                  <li class="service-card__item">Сборка и установка элементов</li>
+                </ul>
+      
+                <div class="service-card__price">от 1800 ₽ / м²</div>
+              </div>
+            </article>
+      
+            <article class="service-card">
+              <div class="service-card__image">
+                <img
+                  src="./images/services-3.png"
+                  alt="Ремонт по дизайн-проекту: точное соблюдение проекта"
+                  class="service-card__img"
+                />
+              </div>
+      
+              <div class="service-card__body">
+                <h3 class="service-card__title">Ремонт по дизайн-проекту</h3>
+      
+                <ul class="service-card__list">
+                  <li class="service-card__item">Соблюдение размеров и узлов</li>
+                  <li class="service-card__item">Сложные примыкания и раскладки</li>
+                  <li class="service-card__item">Работа с нестандартными материалами</li>
+                  <li class="service-card__item">Подбор и комплектация</li>
+                  <li class="service-card__item">Световые сценарии</li>
+                  <li class="service-card__item">Авторский контроль качества</li>
+                  <li class="service-card__item">Сдача объекта по чек-листу</li>
+                </ul>
+      
+                <div class="service-card__price">от 4000 ₽ / м²</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>            
+
+      <section class="reviews" id="reviews">
+        <div class="container reviews__container">
+          <h2 class="section-title reviews__title">Отзывы</h2>
+
+          <div class="reviews__grid">
+            <article class="review-card reviews__card">
+              <p class="review-card__text">
+                Всё по договору: сроки соблюдены, смета понятная. Бригада работала аккуратно.
+              </p>
+              <div class="review-card__meta">
+                <span class="review-card__name">Алексей</span>
+                <span class="review-card__city">Москва</span>
+              </div>
+            </article>
+
+            <article class="review-card reviews__card">
+              <p class="review-card__text">
+                Сделали ремонт по проекту без «вольностей». Узлы и размеры совпали.
+              </p>
+              <div class="review-card__meta">
+                <span class="review-card__name">Марина</span>
+                <span class="review-card__city">Санкт-Петербург</span>
+              </div>
+            </article>
+
+            <article class="review-card reviews__card">
+              <p class="review-card__text">
+                Понравился контроль качества: фотоотчёты, рекомендации, чистота на объекте.
+              </p>
+              <div class="review-card__meta">
+                <span class="review-card__name">Игорь</span>
+                <span class="review-card__city">Казань</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__container">
+          <div class="contact__content">
+            <h2 class="section-title contact__title">Рассчитать стоимость</h2>
+            <p class="contact__text">
+              Оставьте контакты — мы уточним параметры, подготовим смету и сроки.
+            </p>
+          </div>
+
+          <form class="form contact__form" action="#" method="post">
+            <div class="form__row">
+              <label class="form__field">
+                <span class="form__label">Имя</span>
+                <input class="form__input" type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="form__field">
+                <span class="form__label">Телефон</span>
+                <input class="form__input" type="tel" name="phone" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <label class="form__field form__field--full">
+              <span class="form__label">Комментарий</span>
+              <textarea class="form__textarea" name="comment" rows="4"></textarea>
+            </label>
+
+            <button class="button button--primary form__submit" type="submit">Отправить</button>
+
+            <p class="form__policy">
+              Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a class="footer__logo" href="#" aria-label="IC Repair">
+            <span class="footer__logo-text">IC Repair</span>
+          </a>
+          <p class="footer__copy">© <span id="year">2025</span> IC Repair. Все права защищены.</p>
+        </div>
+
+        <div class="footer__right">
+          <a class="footer__link" href="tel:+70000000000">+7 (000) 000-00-00</a>
+          <a class="footer__link" href="mailto:info@icrepair.example">info@icrepair.example</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
